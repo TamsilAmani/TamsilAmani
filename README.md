@@ -2,7 +2,7 @@
 <h3 align="center">A backend engineer with 3.5+ years of experience building scalable and maintainable systems.</h3>
 
 <p align="center">
-💻 I specialize in Python, Node.js, and system design, with a growing interest in developer tooling and automation.<br/>
+💻 I specialise in Java, Ruby, Node.js and system design, with a growing interest in developer tooling and automation.<br/>
 🧠 Currently exploring opportunities in AI, open-source, and clean architecture.<br/>
 🚀 I love solving real-world problems — I even co-founded a laundry tech startup called <a href="https://www.cleanandsteam.in" target="_blank">Clean & Steam</a>.<br/>
 📬 Let’s connect or collaborate — I'm always up for learning, building, or sharing ideas!
