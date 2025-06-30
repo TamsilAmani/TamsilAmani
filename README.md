@@ -1,5 +1,5 @@
 <h1 align="center">👋 Hi, I'm Tamsil</h1>
-<h3 align="center">A backend engineer with 3.5+ years of experience building scalable and maintainable systems.</h3>
+<h3 align="center">A backend engineer with 4 years of experience building scalable and maintainable systems.</h3>
 
 <p align="center">
 💻 I specialise in Java, Ruby, Node.js and system design, with a growing interest in developer tooling and automation.<br/>
