@@ -2,9 +2,9 @@
 
 <a href="https://github.com/TamsilAmani">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:2563eb&height=200&section=header&text=Hi,%20I'm%20Tamsil%20%F0%9F%91%8B&fontColor=f0e9ff&fontSize=48&fontAlignY=38&desc=backend%20engineer%20%E2%80%A2%20systems%20%E2%80%A2%20clean%20architecture&descSize=18&descAlignY=60&descColor=e0d4f7&animation=fadeIn" />
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:fbc2eb,100:a6c1ee&height=200&section=header&text=Hi,%20I'm%20Tamsil%20%F0%9F%91%8B&fontColor=4a4a4a&fontSize=48&fontAlignY=38&desc=backend%20engineer%20%E2%80%A2%20systems%20%E2%80%A2%20clean%20architecture&descSize=18&descAlignY=60&descColor=5a5a5a&animation=fadeIn" />
-    <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:fbc2eb,100:a6c1ee&height=200&section=header&text=Hi,%20I'm%20Tamsil%20%F0%9F%91%8B&fontColor=4a4a4a&fontSize=48&fontAlignY=38&desc=backend%20engineer%20%E2%80%A2%20systems%20%E2%80%A2%20clean%20architecture&descSize=18&descAlignY=60&descColor=5a5a5a&animation=fadeIn" alt="header" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:2563eb&height=200&section=header&text=Hi,%20I'm%20Tamsil%20👋&fontColor=f0e9ff&fontSize=48&fontAlignY=38&desc=backend%20engineer%20•%20systems%20•%20clean%20architecture&descSize=18&descAlignY=60&descColor=c9b8e8&animation=fadeIn" />
+    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:fbc2eb,100:a6c1ee&height=200&section=header&text=Hi,%20I'm%20Tamsil%20👋&fontColor=4a4a4a&fontSize=48&fontAlignY=38&desc=backend%20engineer%20•%20systems%20•%20clean%20architecture&descSize=18&descAlignY=60&descColor=5a5a5a&animation=fadeIn" />
+    <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:fbc2eb,100:a6c1ee&height=200&section=header&text=Hi,%20I'm%20Tamsil%20👋&fontColor=4a4a4a&fontSize=48&fontAlignY=38&desc=backend%20engineer%20•%20systems%20•%20clean%20architecture&descSize=18&descAlignY=60&descColor=5a5a5a&animation=fadeIn" alt="header" />
   </picture>
 </a>
 
