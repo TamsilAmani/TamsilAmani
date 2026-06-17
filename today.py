@@ -431,7 +431,9 @@ if __name__ == '__main__':
     # Uptime is measured from the GitHub account creation date (acc_date)
     age_data, age_time = perf_counter(daily_readme, datetime.datetime.strptime(acc_date, '%Y-%m-%dT%H:%M:%SZ'))
     formatter('age calculation', age_time)
-    total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
+    # LOC scan limited to OWNER repos: scanning COLLABORATOR/ORGANIZATION_MEMBER repos
+    # walks the full commit history of huge org repos (thousands of API calls) and hangs the run.
+    total_loc, loc_time = perf_counter(loc_query, ['OWNER'], 7)
     formatter('LOC (cached)', loc_time) if total_loc[-1] else formatter('LOC (no cache)', loc_time)
     commit_data, commit_time = perf_counter(commit_counter, 7)
     star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
