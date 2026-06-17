@@ -1,12 +1,20 @@
-<!-- ✨ Light-mode anime profile — Tamsil Amani ✨ -->
+<!-- ✨ Anime profile — Tamsil Amani — adapts to GitHub dark/light theme ✨ -->
 
 <a href="https://github.com/TamsilAmani">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:fbc2eb,100:a6c1ee&height=200&section=header&text=Hi,%20I'm%20Tamsil%20👋&fontColor=4a4a4a&fontSize=48&fontAlignY=38&desc=backend%20engineer%20•%20systems%20•%20clean%20architecture&descSize=18&descAlignY=60&descColor=5a5a5a&animation=fadeIn" alt="header" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:2563eb&height=200&section=header&text=Hi,%20I'm%20Tamsil%20👋&fontColor=f0e9ff&fontSize=48&fontAlignY=38&desc=backend%20engineer%20•%20systems%20•%20clean%20architecture&descSize=18&descAlignY=60&descColor=c9b8e8&animation=fadeIn" />
+    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:fbc2eb,100:a6c1ee&height=200&section=header&text=Hi,%20I'm%20Tamsil%20👋&fontColor=4a4a4a&fontSize=48&fontAlignY=38&desc=backend%20engineer%20•%20systems%20•%20clean%20architecture&descSize=18&descAlignY=60&descColor=5a5a5a&animation=fadeIn" />
+    <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:fbc2eb,100:a6c1ee&height=200&section=header&text=Hi,%20I'm%20Tamsil%20👋&fontColor=4a4a4a&fontSize=48&fontAlignY=38&desc=backend%20engineer%20•%20systems%20•%20clean%20architecture&descSize=18&descAlignY=60&descColor=5a5a5a&animation=fadeIn" alt="header" />
+  </picture>
 </a>
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=A06CD5&center=true&vCenter=true&width=600&lines=Backend+Engineer+with+4%2B+years+of+experience;Building+scalable+%26+maintainable+systems;Java+%7C+Ruby+%7C+Node.js+%7C+System+Design;Founder+%40+Clean+%26+Steam+%F0%9F%A7%BA" alt="typing" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=C9A2F0&center=true&vCenter=true&width=600&lines=Backend+Engineer+with+4%2B+years+of+experience;Building+scalable+%26+maintainable+systems;Java+%7C+Ruby+%7C+Node.js+%7C+System+Design;Founder+%40+Clean+%26+Steam+%F0%9F%A7%BA" />
+      <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=A06CD5&center=true&vCenter=true&width=600&lines=Backend+Engineer+with+4%2B+years+of+experience;Building+scalable+%26+maintainable+systems;Java+%7C+Ruby+%7C+Node.js+%7C+System+Design;Founder+%40+Clean+%26+Steam+%F0%9F%A7%BA" />
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=A06CD5&center=true&vCenter=true&width=600&lines=Backend+Engineer+with+4%2B+years+of+experience;Building+scalable+%26+maintainable+systems;Java+%7C+Ruby+%7C+Node.js+%7C+System+Design;Founder+%40+Clean+%26+Steam+%F0%9F%A7%BA" alt="typing" />
+    </picture>
   </a>
 </p>
 
@@ -88,12 +96,24 @@
 <h2 align="center">📊 GitHub Stats</h2>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=TamsilAmani&show_icons=true&include_all_commits=true&count_private=false&hide_border=true&title_color=A06CD5&icon_color=F49AC2&text_color=5a5a5a&bg_color=FFFDFD" />
-  <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=TamsilAmani&hide_border=true&background=FFFDFD&ring=A06CD5&fire=F49AC2&currStreakLabel=A06CD5&sideLabels=5a5a5a&dates=9a9a9a&currStreakNum=5a5a5a&sideNums=5a5a5a" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=TamsilAmani&show_icons=true&include_all_commits=true&count_private=false&hide_border=true&title_color=C9A2F0&icon_color=F49AC2&text_color=c9d1d9&bg_color=0D1117" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=TamsilAmani&show_icons=true&include_all_commits=true&count_private=false&hide_border=true&title_color=A06CD5&icon_color=F49AC2&text_color=5a5a5a&bg_color=FFFDFD" />
+    <img height="165" src="https://github-readme-stats.vercel.app/api?username=TamsilAmani&show_icons=true&include_all_commits=true&count_private=false&hide_border=true&title_color=A06CD5&icon_color=F49AC2&text_color=5a5a5a&bg_color=FFFDFD" alt="stats" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=TamsilAmani&hide_border=true&background=0D1117&ring=C9A2F0&fire=F49AC2&currStreakLabel=C9A2F0&sideLabels=c9d1d9&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=TamsilAmani&hide_border=true&background=FFFDFD&ring=A06CD5&fire=F49AC2&currStreakLabel=A06CD5&sideLabels=5a5a5a&dates=9a9a9a&currStreakNum=5a5a5a&sideNums=5a5a5a" />
+    <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=TamsilAmani&hide_border=true&background=FFFDFD&ring=A06CD5&fire=F49AC2&currStreakLabel=A06CD5&sideLabels=5a5a5a&dates=9a9a9a&currStreakNum=5a5a5a&sideNums=5a5a5a" alt="streak" />
+  </picture>
 </p>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TamsilAmani&layout=compact&hide_border=true&title_color=A06CD5&text_color=5a5a5a&bg_color=FFFDFD" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=TamsilAmani&layout=compact&hide_border=true&title_color=C9A2F0&text_color=c9d1d9&bg_color=0D1117" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=TamsilAmani&layout=compact&hide_border=true&title_color=A06CD5&text_color=5a5a5a&bg_color=FFFDFD" />
+    <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TamsilAmani&layout=compact&hide_border=true&title_color=A06CD5&text_color=5a5a5a&bg_color=FFFDFD" alt="top langs" />
+  </picture>
 </p>
 
 <br/>
@@ -133,4 +153,8 @@
   <img src="https://komarev.com/ghpvc/?username=TamsilAmani&style=for-the-badge&color=A6C1EE&label=PROFILE+VIEWS" alt="profile views" />
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:a6c1ee,100:fbc2eb&height=120&section=footer" alt="footer" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:2563eb,100:7c3aed&height=120&section=footer" />
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:a6c1ee,100:fbc2eb&height=120&section=footer" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:a6c1ee,100:fbc2eb&height=120&section=footer" alt="footer" />
+</picture>
