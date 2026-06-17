@@ -187,6 +187,7 @@ def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None,
                 node {
                     ... on Repository {
                         nameWithOwner
+                        isFork
                         defaultBranchRef {
                             target {
                                 ... on Commit {
@@ -208,11 +209,14 @@ def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None,
     }'''
     variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
     request = simple_request(loc_query.__name__, query, variables)
+    # Skip forks: walking the full commit history of large forked repos (selenium,
+    # DefinitelyTyped, etc.) makes thousands of API calls and hangs the run.
+    new_edges = [e for e in request.json()['data']['user']['repositories']['edges'] if not e['node']['isFork']]
     if request.json()['data']['user']['repositories']['pageInfo']['hasNextPage']:   # If repository data has another page
-        edges += request.json()['data']['user']['repositories']['edges']            # Add on to the LoC count
+        edges += new_edges                                                          # Add on to the LoC count
         return loc_query(owner_affiliation, comment_size, force_cache, request.json()['data']['user']['repositories']['pageInfo']['endCursor'], edges)
     else:
-        return cache_builder(edges + request.json()['data']['user']['repositories']['edges'], comment_size, force_cache)
+        return cache_builder(edges + new_edges, comment_size, force_cache)
 
 
 def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
@@ -431,9 +435,9 @@ if __name__ == '__main__':
     # Uptime is measured from the GitHub account creation date (acc_date)
     age_data, age_time = perf_counter(daily_readme, datetime.datetime.strptime(acc_date, '%Y-%m-%dT%H:%M:%SZ'))
     formatter('age calculation', age_time)
-    # LOC scan limited to OWNER repos: scanning COLLABORATOR/ORGANIZATION_MEMBER repos
-    # walks the full commit history of huge org repos (thousands of API calls) and hangs the run.
-    total_loc, loc_time = perf_counter(loc_query, ['OWNER'], 7)
+    # Forks are excluded inside loc_query (they caused the hang), so it's safe to
+    # include collaborator/org repos here for an accurate LOC count.
+    total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
     formatter('LOC (cached)', loc_time) if total_loc[-1] else formatter('LOC (no cache)', loc_time)
     commit_data, commit_time = perf_counter(commit_counter, 7)
     star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
