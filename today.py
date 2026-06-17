@@ -435,9 +435,10 @@ if __name__ == '__main__':
     # Uptime is measured from the GitHub account creation date (acc_date)
     age_data, age_time = perf_counter(daily_readme, datetime.datetime.strptime(acc_date, '%Y-%m-%dT%H:%M:%SZ'))
     formatter('age calculation', age_time)
-    # Forks are excluded inside loc_query (they caused the hang), so it's safe to
-    # include collaborator/org repos here for an accurate LOC count.
-    total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
+    # OWNER repos only. Including COLLABORATOR/ORGANIZATION_MEMBER pulls in huge
+    # upstream repos (e.g. selenium, ~40k+ commits) whose full history must be
+    # walked, hanging the run. Forks are also excluded inside loc_query.
+    total_loc, loc_time = perf_counter(loc_query, ['OWNER'], 7)
     formatter('LOC (cached)', loc_time) if total_loc[-1] else formatter('LOC (no cache)', loc_time)
     commit_data, commit_time = perf_counter(commit_counter, 7)
     star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
